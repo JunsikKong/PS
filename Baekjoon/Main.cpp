@@ -2,10 +2,10 @@
 
 using namespace std;
 
-int Baekjoon2839();
+int Baekjoon10871();
 
 int main(void) {
-	Baekjoon2839();
+	Baekjoon10871();
 }
 
 /*
