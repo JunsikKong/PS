@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int Beakjoon10869(void) {
+int Baekjoon10869(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 
