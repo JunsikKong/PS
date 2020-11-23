@@ -1,11 +1,9 @@
-#include <iostream>
-
 using namespace std;
 
-int Baekjoon10871();
+int Baekjoon1924();
 
 int main(void) {
-	Baekjoon10871();
+	Baekjoon1924();
 }
 
 /*
