@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int Baekjoon10951(void) {
+int Baekjoon4101(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 
@@ -10,10 +10,10 @@ int Baekjoon10951(void) {
 
 	while (1) {
 		cin >> a >> b;
-		if (cin.eof()) {
-			break;
-		}
-		cout << a + b << '\n';
+		if (a == 0 && b == 0) break;
+		if (a > b) cout << "Yes";
+		else cout << "No";
+		cout << '\n';
 	}
 
 	return 0;
