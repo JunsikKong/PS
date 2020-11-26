@@ -1,0 +1,2 @@
+10871	배열 동적할당 new, delete
+1152	string 라이브러리, getline()
