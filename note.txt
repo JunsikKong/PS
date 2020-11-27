@@ -1,2 +1,5 @@
 10871	배열 동적할당 new, delete
 1152	string 라이브러리, getline()
+10809	fill_n(arr, size, val) arr배열 size인덱스 까지 val로 초기화
+for(int i=0; i<size; i++) arr[i]=val; 과 같음
+1008	소수점 고정 출력
