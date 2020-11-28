@@ -1,9 +1,9 @@
 using namespace std;
 
-int Baekjoon1546();
+int Baekjoon3036();
 
 int main(void) {
-	Baekjoon1546();
+	Baekjoon3036();
 }
 
 /*
