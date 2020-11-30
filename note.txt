@@ -3,5 +3,8 @@
 10809	fill_n(arr, size, val) arr배열 size인덱스 까지 val로 초기화
 for(int i=0; i<size; i++) arr[i]=val; 과 같음
 1008	소수점 고정 출력
+cout << fixed : 0일 경우에도 출력
+cout.setf(ios::fixed) : 0이면 출력하지않음
 11718	eof
 4948	에라토스테네스의 체(소수 구하기)
+9020	에라토스테네스의 체(소수 구하기)
