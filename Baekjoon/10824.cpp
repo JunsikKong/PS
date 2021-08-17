@@ -4,7 +4,7 @@ using namespace std;
 
 long long int func(long long int x, long long int y);
 
-int Baekjoon10824(void) {
+int main(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 

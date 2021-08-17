@@ -2,14 +2,14 @@
 
 using namespace std;
 
-void selfnum4673(int n, int* num);
+void selfnum(int n, int* num);
 
-int Baekjoon4673(void) {
+int main(void) {
 
 	int num[10000] = { 0, };
 
 	for (int i = 1; i <= 10000; i++) {
-		selfnum4673(i, num);
+		selfnum(i, num);
 	}
 
 	for (int j = 1; j <= 10000; j++) {
@@ -19,7 +19,7 @@ int Baekjoon4673(void) {
 	return 0;
 }
 
-void selfnum4673(int n, int *num) {
+void selfnum(int n, int *num) {
 	int sum = n;
 
 	while (1) {

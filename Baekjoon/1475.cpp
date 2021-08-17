@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int Baekjoon1475(void) {
+int main(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 

@@ -2,9 +2,9 @@
 
 using namespace std;
 
-int rev1357(int n);
+int rev(int n);
 
-int Baekjoon1357(void) {
+int main(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 
@@ -14,15 +14,15 @@ int Baekjoon1357(void) {
 
 	cin >> x >> y;
 
-	result = rev1357(x) + rev1357(y);
-	result = rev1357(result);
+	result = rev(x) + rev(y);
+	result = rev(result);
 
 	cout << result << '\n';
 
 	return 0;
 }
 
-int rev1357(int n) {
+int rev(int n) {
 	int result;
 	result = 0;
 

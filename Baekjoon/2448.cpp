@@ -4,7 +4,7 @@ using namespace std;
 
 char star(int x, int y, int n);
 
-int Baekjoon2448(void) {
+int main(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 

@@ -2,9 +2,9 @@
 
 using namespace std;
 
-char star10997(int x, int y, int mx, int my, int n);
+char star(int x, int y, int mx, int my, int n);
 
-int Baekjoon10997(void) {
+int main(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 
@@ -18,7 +18,7 @@ int Baekjoon10997(void) {
 
 	for (int y = 1; y <= my; y++) {
 		for (int x = 1; x <= mx; x++) {
-			cout << star10997(x, y, mx, my, n);
+			cout << star(x, y, mx, my, n);
 			if (y == 2) break;
 		}
 		cout << '\n';
@@ -28,7 +28,7 @@ int Baekjoon10997(void) {
 }
 
 
-char star10997(int x, int y, int mx, int my, int n) {
+char star(int x, int y, int mx, int my, int n) {
 	for (int i = 0; i < n - 1; i++) {
 		int p = i * 2;
 		if ((1 + p <= x && x <= mx - p + 2 && 1 + p == y) ||

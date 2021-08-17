@@ -2,9 +2,9 @@
 
 using namespace std;
 
-int hannum1065(int num);
+int hannum(int num);
 
-int Baekjoon1065(void) {
+int main(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 
@@ -15,7 +15,7 @@ int Baekjoon1065(void) {
 	result = 0;
 
 	while (n > 0) {
-		result += hannum1065(n--);
+		result += hannum(n--);
 	}
 
 	cout << result << '\n';
@@ -23,7 +23,7 @@ int Baekjoon1065(void) {
 	return 0;
 }
 
-int hannum1065(int num) {
+int hannum(int num) {
 	int unit, gap;
 
 	if (num >= 10) {

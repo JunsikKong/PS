@@ -2,10 +2,10 @@
 
 using namespace std;
 
-int max10993(int m, int n);
-char star10993(int x, int y, int n);
+int max(int m, int n);
+char star(int x, int y, int n);
 
-int Baekjoon10993(void) {
+int main(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 
@@ -13,7 +13,7 @@ int Baekjoon10993(void) {
 	
 	cin >> n;
 
-	my = max10993(1, n);
+	my = max(1, n);
 
 	for (int y = 1; y <= my; y++) {
 		if (n % 2) {
@@ -24,7 +24,7 @@ int Baekjoon10993(void) {
 		}
 
 		for (int x = 1; x <= mx; x++) {
-			cout << star10993(x, y, n);
+			cout << star(x, y, n);
 		}
 		cout << '\n';
 	}
@@ -32,28 +32,28 @@ int Baekjoon10993(void) {
 	return 0;
 }
 
-int max10993(int m, int n) {
+int max(int m, int n) {
 	if (n == 1) {
 		return m;
 	}
 	else {
-		return m + max10993(m * 2, n - 1);
+		return m + max(m * 2, n - 1);
 	}
 }
 
-char star10993(int x, int y, int n) {
+char star(int x, int y, int n) {
 	int mid;
 
 	if (n == 1) return '*';
 
-	mid = max10993(1, n);
+	mid = max(1, n);
 
 	if (n % 2) {
 		if (x == mid - y + 1 || x == mid + y - 1 || y == mid) {
 			return '*';
 		}
 		else if (x > mid - y + 1 && x < mid + y - 1 && y > mid / 2) {
-			return star10993(x - (mid / 2 + 1), y - mid / 2, n - 1);
+			return star(x - (mid / 2 + 1), y - mid / 2, n - 1);
 		}
 		else return ' ';
 	}
@@ -62,7 +62,7 @@ char star10993(int x, int y, int n) {
 			return '*';
 		}
 		else if (x > mid - (y - 1) && x < mid + (y - 1) && y <= mid / 2 + 1) {
-			return star10993(x - (mid / 2 + 1), y - 1, n - 1);
+			return star(x - (mid / 2 + 1), y - 1, n - 1);
 		}
 		else return ' ';
 	}

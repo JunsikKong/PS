@@ -4,7 +4,7 @@ using namespace std;
 
 int func(int x, int y);
 
-int Baekjoon5032(void) {
+int main(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 

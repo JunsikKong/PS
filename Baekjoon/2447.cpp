@@ -4,7 +4,7 @@ using namespace std;
 
 int flag(int x, int y, int p);
 
-int Baekjoon2447(void) {
+int main(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 

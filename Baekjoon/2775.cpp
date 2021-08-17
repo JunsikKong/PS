@@ -4,7 +4,7 @@ using namespace std;
 
 int sumMan(int a, int b);
 
-int Baekjoon2775(void) {
+int main(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 

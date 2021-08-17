@@ -2,9 +2,9 @@
 
 using namespace std;
 
-int fibonacci10870(int n);
+int fibonacci(int n);
 
-int Baekjoon10870(void) {
+int main(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 
@@ -12,12 +12,12 @@ int Baekjoon10870(void) {
 
 	cin >> n;
 
-	cout << fibonacci10870(n) << '\n';
+	cout << fibonacci(n) << '\n';
 
 	return 0;
 }
 
-int fibonacci10870(int n) {
+int fibonacci(int n) {
 	if (n == 0) {
 		return 0;
 	}
@@ -25,6 +25,6 @@ int fibonacci10870(int n) {
 		return 1;
 	}
 	else {
-		return fibonacci10870(n - 1) + fibonacci10870(n - 2);
+		return fibonacci(n - 1) + fibonacci(n - 2);
 	}
 }

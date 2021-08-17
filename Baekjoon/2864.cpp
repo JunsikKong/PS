@@ -5,7 +5,7 @@ using namespace std;
 
 int f(int x, int mask);
 
-int Baekjoon2864(void) {
+int main(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 

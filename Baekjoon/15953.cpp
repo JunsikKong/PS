@@ -3,10 +3,10 @@
 
 using namespace std;
 
-int pactsum15953(int x);
-int powsum15953(int x);
+int pactsum(int x);
+int powsum(int x);
 
-int Baekjoon15953(void) {
+int main(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 
@@ -23,13 +23,13 @@ int Baekjoon15953(void) {
 
         for (int j = 0; j < 6; j++)
         {
-            if (a <= pactsum15953(j + 1) && a > pactsum15953(j)) {
+            if (a <= pactsum(j + 1) && a > pactsum(j)) {
                 result = arr[j] * 10000;
             }
         }
         for (int j = 0; j < 5; j++)
         {
-            if (b <= powsum15953(j) && b > powsum15953(j - 1)) {
+            if (b <= powsum(j) && b > powsum(j - 1)) {
                 result = result + pow(2, 9 - j) * 10000;
             }
         }
@@ -39,16 +39,16 @@ int Baekjoon15953(void) {
 	return 0;
 }
 
-int pactsum15953(int x)
+int pactsum(int x)
 {
 	if (x < 1) return 0;
 	else if (x == 1) return 1;
-	else return x + pactsum15953(x - 1);
+	else return x + pactsum(x - 1);
 }
 
-int powsum15953(int x)
+int powsum(int x)
 {
 	if (x < 0) return 0;
 	else if (x == 0) return 1;
-	else return powsum15953(x - 1) + pow(2, x);
+	else return powsum(x - 1) + pow(2, x);
 }

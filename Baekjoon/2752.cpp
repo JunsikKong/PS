@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-void bubble2752(int* n, int size);
+void bubble(int* n, int size);
 
-int Baekjoon2752(void) {
+int main(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 
@@ -11,7 +11,7 @@ int Baekjoon2752(void) {
 
 	cin >> n[0] >> n[1] >> n[2];
 
-	bubble2752(n, 3);
+	bubble(n, 3);
 
 	cout << n[0] << ' ';
 	cout << n[1] << ' ';
@@ -20,7 +20,7 @@ int Baekjoon2752(void) {
 	return 0;
 }
 
-void bubble2752(int* n, int size) {
+void bubble(int* n, int size) {
 	if (size != 1) {
 		for (int i = 0; i < size - 1; i++) {
 			int swap;
@@ -30,6 +30,6 @@ void bubble2752(int* n, int size) {
 				n[i + 1] = swap;
 			}
 		}
-		bubble2752(n, size - 1);
+		bubble(n, size - 1);
 	}
 }

@@ -2,9 +2,9 @@
 
 using namespace std;
 
-int distance1011(int n);
+int distance(int n);
 
-int Baekjoon1011(void) {
+int main(void) {
 	cin.tie(NULL);
 	ios::sync_with_stdio(false);
 
@@ -17,13 +17,13 @@ int Baekjoon1011(void) {
 
 		gap = y - x;
 
-		cout << distance1011(gap) << '\n';
+		cout << distance(gap) << '\n';
 	}
 
 	return 0;
 }
 
-int distance1011(int n) {
+int distance(int n) {
 	int i = 1;
 	int result = 0;
 
